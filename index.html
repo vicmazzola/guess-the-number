@@ -18,13 +18,24 @@
     <h2>This is the game</h2></header>
 <div class="container mt-5 d-flex justify-content-center">
     <main>
-        <div class="container" id="input-container">
-            <form>
-                <label for="input-number" class="form-label" id="label-number">Guess a number</label>
-                <input class="input-number" id="input-number" type="number" placeholder="Enter a number">
-                <button class="btn btn-outline-primary" id="button">Submit</button>
-                <p id="result">Here's the result!</p>
-            </form>
+        <div class="card" style="width: 24rem;">
+            <div class="card-body">
+                <div class="container" id="input-container">
+                    <h5 class="card-title text-center">Can you guess the number?</h5>
+                    <form id="game-form">
+                        <div class="mb-3">
+                            <label for="input-number" class="form-label" id="label-number">Guess a number between 1 and
+                                100</label>
+                            <input class="input-number" id="input-number" type="number" placeholder="Enter a number">
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary w-50 mb-3" id="button">Submit</button>
+                        <button type="button" class="btn btn-outline-secondary w-100" id="reset-button" style="display: none;">
+                            Restart
+                        </button>
+                        <p id="result">Here's the result!</p>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 </div>
